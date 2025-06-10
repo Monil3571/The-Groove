@@ -27,6 +27,7 @@ export default function MenuSection() {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
+                            key={alt}
                         >
                             <div className="relative w-full h-64">
                                 <Image

@@ -68,7 +68,7 @@ export default function Testimonials() {
                     {Array.from({ length: 2 }).map((_, i) => (
                         <div key={i} className="flex items-start gap-16">
                             {testimonials.map((testimonial) => (
-                                <div className="flex flex-col max-w-[95vw]">
+                                <div className="flex flex-col max-w-[95vw]" key={testimonial.name}>
                                     <div className="flex justify-between items-center">
                                         <h1 className="text-accent font-bold">
                                             {testimonial.name}
