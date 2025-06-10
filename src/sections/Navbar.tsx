@@ -19,21 +19,22 @@ export default function Navbar() {
             <section className="fixed top-0 z-50 w-full bg-neutral-800/15 backdrop-blur-md">
                 <div className="py-4 px-4 grid grid-cols-2 lg:grid-cols-3 justify-between items-center ">
                     <div className="">
-                        {/* <Image
-                            src={logoImage}
-                            alt="Logo Image"
-                            className="h-11 w-auto"
-                        />  */}
-                        
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="542.000000pt" height="314.000000pt" viewBox="0 0 542.000000 314.000000"
- preserveAspectRatio="xMidYMid meet"
- className="w-24 h-12"
- >
-
-<g transform="translate(0.000000,314.000000) scale(0.100000,-0.100000)"
-fill="white" stroke="none">
-<path d="M2735 3045 c-349 -32 -702 -133 -1005 -288 -298 -152 -513 -314 -692
+                        <svg
+                            version="1.0"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="542.000000pt"
+                            height="314.000000pt"
+                            viewBox="0 0 542.000000 314.000000"
+                            preserveAspectRatio="xMidYMid meet"
+                            className="w-24 h-12"
+                        >
+                            <g
+                                transform="translate(0.000000,314.000000) scale(0.100000,-0.100000)"
+                                fill="white"
+                                stroke="none"
+                            >
+                                <path
+                                    d="M2735 3045 c-349 -32 -702 -133 -1005 -288 -298 -152 -513 -314 -692
 -522 -37 -42 -96 -94 -149 -130 -273 -186 -460 -459 -524 -766 -30 -142 -9
 -312 55 -447 67 -140 233 -283 358 -308 29 -6 30 -8 34 -78 5 -85 24 -128 84
 -189 86 -87 189 -127 332 -127 70 0 198 23 234 41 11 6 37 0 81 -20 536 -240
@@ -118,30 +119,48 @@ m-1448 -19 c-26 -14 -24 -59 2 -59 13 0 20 7 20 20 0 11 5 20 10 20 6 0 10 -7
 95 3 90 1 105 -13 108 -36 7 -49 -25 -49 -123 0 -57 -4 -96 -11 -101 -8 -4 -9
 33 -5 131 7 161 17 188 69 183 l32 -3 -3 -140z m-233 77 c6 -10 6 -24 1 -32
 -11 -18 -4 -29 26 -40 57 -22 54 -112 -5 -171 -33 -34 -85 -59 -96 -47 -7 6
-11 284 19 296 11 18 44 14 55 -6z"/>
-<path d="M1695 1856 c-77 -18 -158 -38 -180 -45 -114 -38 -136 -105 -49 -146
-30 -14 53 -17 115 -12 163 13 299 107 299 207 0 38 -2 38 -185 -4z"/>
-<path d="M2738 1733 c-14 -16 -29 -38 -33 -51 -8 -28 -29 -24 -33 6 -5 35 -32
+11 284 19 296 11 18 44 14 55 -6z"
+                                />
+                                <path
+                                    d="M1695 1856 c-77 -18 -158 -38 -180 -45 -114 -38 -136 -105 -49 -146
+30 -14 53 -17 115 -12 163 13 299 107 299 207 0 38 -2 38 -185 -4z"
+                                />
+                                <path
+                                    d="M2738 1733 c-14 -16 -29 -38 -33 -51 -8 -28 -29 -24 -33 6 -5 35 -32
 26 -87 -31 -117 -121 -151 -299 -71 -366 21 -18 87 -16 124 3 49 25 118 111
-148 183 22 56 28 84 28 154 1 72 -2 90 -18 108 -24 27 -27 27 -58 -6z"/>
-<path d="M1380 671 c-156 -43 -197 -62 -210 -97 -22 -58 37 -104 134 -104 99
-0 154 38 200 140 29 64 35 92 21 96 -5 1 -71 -14 -145 -35z"/>
-<path d="M4170 2042 c-59 -38 -97 -83 -132 -159 -33 -73 -37 -123 -10 -123 47
-0 198 153 222 225 27 81 -6 104 -80 57z"/>
-<path d="M3271 1842 c-11 -17 -25 -40 -30 -53 l-9 -24 -13 30 c-7 17 -14 31
+148 183 22 56 28 84 28 154 1 72 -2 90 -18 108 -24 27 -27 27 -58 -6z"
+                                />
+                                <path
+                                    d="M1380 671 c-156 -43 -197 -62 -210 -97 -22 -58 37 -104 134 -104 99
+0 154 38 200 140 29 64 35 92 21 96 -5 1 -71 -14 -145 -35z"
+                                />
+                                <path
+                                    d="M4170 2042 c-59 -38 -97 -83 -132 -159 -33 -73 -37 -123 -10 -123 47
+0 198 153 222 225 27 81 -6 104 -80 57z"
+                                />
+                                <path
+                                    d="M3271 1842 c-11 -17 -25 -40 -30 -53 l-9 -24 -13 30 c-7 17 -14 31
 -15 33 -7 10 -67 -34 -97 -70 -57 -71 -89 -145 -94 -218 -4 -56 -2 -70 19
--100 33 -49 65 -58 125 -35 95 36 176 158 196 298 19 131 -30 212 -82 139z"/>
-<path d="M3406 1182 c-8 -13 -10 -192 -2 -199 11 -11 59 22 84 57 32 47 30
-102 -4 129 -27 21 -69 28 -78 13z"/>
-<path d="M2900 996 c-38 -21 -73 -90 -65 -127 8 -36 44 -62 82 -57 33 4 40 26
-42 131 1 74 -7 81 -59 53z"/>
-<path d="M2550 982 c0 -16 -3 -63 -6 -105 -7 -74 -6 -77 14 -77 31 0 88 62 96
-103 11 60 -26 107 -84 107 -15 0 -20 -7 -20 -28z"/>
-<path d="M2161 832 c-6 -12 -11 -57 -11 -101 0 -94 9 -101 66 -48 64 58 54
-145 -18 162 -20 5 -29 2 -37 -13z"/>
-</g>
-</svg>
-
+-100 33 -49 65 -58 125 -35 95 36 176 158 196 298 19 131 -30 212 -82 139z"
+                                />
+                                <path
+                                    d="M3406 1182 c-8 -13 -10 -192 -2 -199 11 -11 59 22 84 57 32 47 30
+102 -4 129 -27 21 -69 28 -78 13z"
+                                />
+                                <path
+                                    d="M2900 996 c-38 -21 -73 -90 -65 -127 8 -36 44 -62 82 -57 33 4 40 26
+42 131 1 74 -7 81 -59 53z"
+                                />
+                                <path
+                                    d="M2550 982 c0 -16 -3 -63 -6 -105 -7 -74 -6 -77 14 -77 31 0 88 62 96
+103 11 60 -26 107 -84 107 -15 0 -20 -7 -20 -28z"
+                                />
+                                <path
+                                    d="M2161 832 c-6 -12 -11 -57 -11 -101 0 -94 9 -101 66 -48 64 58 54
+145 -18 162 -20 5 -29 2 -37 -13z"
+                                />
+                            </g>
+                        </svg>
                     </div>
                     <div className="lg:flex items-center justify-center hidden">
                         <nav className="flex gap-6 font-medium justify-center">
@@ -197,48 +216,52 @@ m-1448 -19 c-26 -14 -24 -59 2 -59 13 0 20 7 20 20 0 11 5 20 10 20 6 0 10 -7
                                 )}
                             ></line>
                         </svg>
-                        <Button
-                            variant="secondary"
-                            className="hidden md:inline-flex items-center"
-                        >
-                            View Menu
-                        </Button>
+                        <a href="#menu">
+                            <Button
+                                variant="secondary"
+                                className="hidden md:inline-flex items-center"
+                            >
+                                View Menu
+                            </Button>
+                        </a>
+                        <a href="#tel:+16473501917">
                         <Button
                             variant="primary"
                             className="hidden md:inline-flex items-center"
-                        >
+                            >
                             Call Now
                         </Button>
+                            </a>
                     </div>
                 </div>
                 <AnimatePresence>
-                            {isOpen && (
-                                <motion.div
-                                    initial={{ height: 0 }}
-                                    animate={{ height: "auto" }}
-                                    exit={{ height: 0 }}
-                                    className="overflow-hidden "
-                                >
-                                    <div className="flex flex-col items-center gap-4 py-2 ">
-                                        {navLinks.map((link) => (
-                                            <a
-                                                href={link.href}
-                                                key={link.label}
-                                                className=""
-                                            >
-                                                {link.label}
-                                            </a>
-                                        ))}
-                                        <Button variant="secondary">
-                                            View Menu
-                                        </Button>
-                                        <Button variant="primary">
-                                            Call Now
-                                        </Button>
-                                    </div>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                    {isOpen && (
+                        <motion.div
+                            initial={{ height: 0 }}
+                            animate={{ height: "auto" }}
+                            exit={{ height: 0 }}
+                            className="overflow-hidden "
+                        >
+                            <div className="flex flex-col items-center gap-4 py-2 ">
+                                {navLinks.map((link) => (
+                                    <a
+                                        href={link.href}
+                                        key={link.label}
+                                        className=""
+                                    >
+                                        {link.label}
+                                    </a>
+                                ))}
+                                <a href="#menu">
+                                <Button variant="secondary">View Menu</Button>
+                                </a>
+                                <a href="#tel:+16473501917">
+                                <Button variant="primary">Call Now</Button>
+                                </a>
+                            </div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </section>
         </>
     );
