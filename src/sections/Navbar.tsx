@@ -255,7 +255,7 @@ m-1448 -19 c-26 -14 -24 -59 2 -59 13 0 20 7 20 20 0 11 5 20 10 20 6 0 10 -7
                                 <a href="#menu">
                                 <Button variant="secondary">View Menu</Button>
                                 </a>
-                                <a href="#tel:+16473501917">
+                                <a href="#tel:+1647-350-1917">
                                 <Button variant="primary">Call Now</Button>
                                 </a>
                             </div>

@@ -42,7 +42,7 @@ export default function About() {
                             <span className="text-[#FF3D5A]">The Groove</span>
                         </motion.h1>
                     </div>
-                    <div className="text-4xl md:text-6xl lg:text-7xl text-center font-medium mt-10">
+                    <div className="text-2xl md:text-6xl lg:text-7xl text-center font-medium mt-10 px-6">
                         <span>
                             Family-owned and full of energy 
                         </span>{" "}
@@ -62,7 +62,7 @@ export default function About() {
                         </span>
                     </div>
                 </div>
-                <div className="h-[110vh]" ref={scrollTarget}></div>
+                <div className="h-[90vh]" ref={scrollTarget}></div>
             </div>
         </section>
     );
