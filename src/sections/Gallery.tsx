@@ -16,7 +16,7 @@ const images = [
 const keywords = ["Drinks.", "Food.","Music.", "Karaoke.", "Sports.","Vibes."];
 export default function Gallery() {
     return (
-        <section className="py-12 overflow-x-clip" id="Gallery">
+        <section className="py-12 overflow-x-clip" id="gallery">
             <div className="container">
                 
                 <motion.h2
