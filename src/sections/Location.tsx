@@ -23,15 +23,15 @@ export default function Location() {
                 </div>
                 <div className="flex flex-col gap-2 font-medium">
                     <div className="flex items-center gap-4">
-                        <MapPin className="text-[#FF3D5A] w-6 h-6" />
+                        <MapPin className="text-accent w-6 h-6" />
                         <span>1952 Danforth Ave, Toronto, ON M4C 1J4</span>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Phone className=" text-[#FF3D5A] w-6 h-6" />
+                        <Phone className=" text-accent w-6 h-6" />
                         <span>+1 (647) 350-1917</span>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Clock className=" text-[#FF3D5A] w-6 h-6" />
+                        <Clock className=" text-accent w-6 h-6" />
                         <span>Mon – Sun: 4PM – 2AM</span>
                     </div>
                 </div>

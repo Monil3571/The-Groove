@@ -12,7 +12,7 @@ export default function MenuSection() {
         <section className="py-36" id="menu">
             <div className="container mx-auto px-4">
                 <h2 className="font-luckiestGuy text-4xl uppercase tracking-wide mb-12 text-center text-white">
-                    Eat. <span className="text-[#FF3D5A]">Drink.</span> Repeat.
+                    Eat. <span className="text-accent">Drink.</span> Repeat.
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

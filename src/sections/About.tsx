@@ -39,7 +39,7 @@ export default function About() {
                             className="text-5xl md:text-6xl font-extrabold text-white tracking-tight text-center"
                         >
                             Welcome to <br />
-                            <span className="text-[#FF3D5A]">The Groove</span>
+                            <span className="text-accent">The Groove</span>
                         </motion.h1>
                     </div>
                     <div className="text-2xl md:text-6xl lg:text-7xl text-center font-medium mt-10 px-6">
@@ -57,7 +57,7 @@ export default function About() {
                                 >{`${word} `}</span>
                             ))}
                         </span>
-                        <span className="text-[#FF3D5A] block font-bold">
+                        <span className="text-accent block font-bold">
                             Kick back, stay awhile — the night’s just getting started
                         </span>
                     </div>
