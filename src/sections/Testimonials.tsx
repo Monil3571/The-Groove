@@ -134,17 +134,30 @@ export default function Testimonials() {
   const animation = useRef<AnimationPlaybackControls>();
   const [scope, animate] = useAnimate();
 
+  // Detect desktop screen
   useEffect(() => {
-  if (typeof window !== "undefined" && scope.current) {
-    animation.current = animate(
-      scope.current,
-      { x: "-50%" },
-      { duration: 25, ease: "linear", repeat: Infinity }
-    );
-    animation.current.speed = 0.5;
-  }
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+
+    handleResize(); // check on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Animate sliding on desktop
+  useEffect(() => {
+    if (isDesktop && scope.current) {
+      animation.current = animate(
+        scope.current,
+        { x: "-50%" },
+        { duration: 25, ease: "linear", repeat: Infinity }
+      );
+      animation.current.speed = 0.5;
+    }
+  }, [isDesktop]);
+
+  // Hover speed control
   useEffect(() => {
     if (animation.current) {
       animation.current.speed = isHovered ? 0.5 : 1;
@@ -153,9 +166,11 @@ export default function Testimonials() {
 
   return (
     <section className="py-16">
-      <h2 className="text-3xl font-bold text-center mb-10 md:text-5xl">What People Are Saying</h2>
+      <h2 className="text-3xl font-bold text-center mb-10 md:text-5xl">
+        What People Are Saying
+      </h2>
 
-      {/* Mobile Scrollable */}
+      {/* Mobile: Scrollable */}
       {!isDesktop && (
         <div className="overflow-x-auto flex gap-6 px-4 snap-x snap-mandatory scroll-smooth">
           {testimonials.map((testimonial) => (
@@ -177,7 +192,7 @@ export default function Testimonials() {
         </div>
       )}
 
-      {/* Desktop Sliding */}
+      {/* Desktop: Animated Sliding */}
       {isDesktop && (
         <div className="overflow-x-clip p-4 flex">
           <motion.div
@@ -190,7 +205,7 @@ export default function Testimonials() {
               <div key={i} className="flex items-start gap-16">
                 {testimonials.map((testimonial) => (
                   <div
-                    className="flex flex-col max-w-[25vw] bg-neutral-900 rounded-3xl p-6 border border-white/10"
+                    className="flex flex-col max-w-[30vw] bg-neutral-900 rounded-3xl p-6 border border-white/10"
                     key={`${testimonial.name}-${i}`}
                   >
                     <div className="flex justify-between items-center">
