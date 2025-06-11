@@ -23,7 +23,7 @@ export default function Gallery() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="text-white hover:text-[#FF3D5A] text-4xl font-extrabold tracking-wide font-luckiestGuy"
+                    className="text-white hover:text-[#FF3D5A] text-4xl font-extrabold tracking-wide font-luckiestGuy text-center"
                     style={{ wordSpacing: "0.8rem" }} 
                 >
                     {keywords.join(" ")}

@@ -15,7 +15,7 @@ export default function MenuSection() {
                     Eat. <span className="text-[#FF3D5A]">Drink.</span> Repeat.
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {foodMenus.map(({ src, alt, href }) => (
                         <motion.a
                             whileHover={{

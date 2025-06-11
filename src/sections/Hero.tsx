@@ -15,7 +15,7 @@ export default function Hero() {
                 />
 
                 {/* Overlay content */}
-                <div className="flex flex-col md:flex-row md:items-center items-start gap-4 justify-between z-10 max-w-3xl px-4 absolute bottom-24 right-10">
+                <div className="flex flex-col  items-start gap-4 justify-between z-10 px-4 absolute bottom-24 ">
                     <div className="md:flex md:flex-col">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}

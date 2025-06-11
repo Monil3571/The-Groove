@@ -53,7 +53,7 @@ export default function Events() {
                     <div>
                         <h2 className="text-5xl font-medium mt-6">
                             What’s Happening at{" "}
-                            <span className="text-accent font-bold">The Groove</span>
+                            <p className="text-accent font-bold">The Groove</p>
                         </h2>
                         <p className="text-white/50 mt-4 text-lg">
                             Catch the vibe — from karaoke nights to live tunes,
@@ -61,7 +61,7 @@ export default function Events() {
                         </p>
                     </div>
                     <div className="h-[500px] lg:h-[800px] mt-8 lg:mt-0 overflow-hidden grid md:grid-cols-2 gap-4 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
-                        <EventsColumn events={events} />
+                        <EventsColumn events={events}/>
                         <EventsColumn
                             events={events.slice().reverse()}
                             reverse

@@ -57,18 +57,18 @@ export default function Testimonials() {
     });
     return (
         <section className="py-16">
-            <h2 className="text-3xl font-bold text-center mb-10">What People Are Saying</h2>
+            <h2 className="text-3xl font-bold text-center mb-10 md:text-5xl">What People Are Saying</h2>
             <div className="overflow-x-clip p-4 flex">
                 <motion.div
                     ref={scope}
-                    className="flex flex-none gap-16 pr-16 text-xl md:text-8xl font-medium group cursor-pointer"
+                    className="flex flex-none gap-16 pr-16 text-xl md:text-3xl font-medium group cursor-pointer"
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
                     {Array.from({ length: 2 }).map((_, i) => (
                         <div key={i} className="flex items-start gap-16">
                             {testimonials.map((testimonial) => (
-                                <div className="flex flex-col max-w-[95vw]" key={testimonial.name}>
+                                <div className="flex flex-col max-w-[80vw] md:max-w-[50vw]" key={testimonial.name}>
                                     <div className="flex justify-between items-center">
                                         <h1 className="text-accent font-bold">
                                             {testimonial.name}
