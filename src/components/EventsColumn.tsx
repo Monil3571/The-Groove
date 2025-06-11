@@ -35,7 +35,7 @@ export default function EventsColumn(props: {
                         <Image
                             src={event.icon}
                             alt={"${integration.name} icon"}
-                            className="size-max"
+                            className="object-cover"
                             />
                     </div>
                     <h3 className="text-xl mt-6">
