@@ -135,19 +135,14 @@ export default function Testimonials() {
   const [scope, animate] = useAnimate();
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const isWide = window.innerWidth >= 768;
-      setIsDesktop(isWide);
-
-      if (isWide) {
-        animation.current = animate(
-          scope.current,
-          { x: "-50%" },
-          { duration: 25, ease: "linear", repeat: Infinity }
-        );
-        animation.current.speed = 0.5;
-      }
-    }
+  if (typeof window !== "undefined" && scope.current) {
+    animation.current = animate(
+      scope.current,
+      { x: "-50%" },
+      { duration: 25, ease: "linear", repeat: Infinity }
+    );
+    animation.current.speed = 0.5;
+  }
   }, []);
 
   useEffect(() => {
