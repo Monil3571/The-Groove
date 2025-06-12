@@ -17,7 +17,7 @@ export default function EventsColumn(props: {
             }}
             animate={{ y: reverse ? 0 : "-50%" }}
             transition={{
-                duration: 14,
+                duration: 11,
                 repeat: Infinity,
                 ease: "linear",
             }}
