@@ -36,7 +36,7 @@ export default function Gallery() {
                             ease: "linear",
                             repeat: Infinity,
                         }}
-                        className="flex flex-none gap-8 pr-24"
+                        className="flex flex-none gap-8 pr-8"
                     >
                         {Array.from({ length: 2 }).map((_, i) => (
                             <Fragment key={i}>
